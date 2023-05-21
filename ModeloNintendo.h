@@ -15,10 +15,10 @@ class ModeloNintendo {
       ModeloNintendo(string nombre, string color, int edad, int salud, bool esHumano = false);
       
       void saludar(string nombre);
-      void saltar(char tecla);
-      void agacharse(char tecla = 'C');
-      int avanzar(char tecla);
-      void danio(string grito);
+      void saltar(); // s
+      void agacharse(); // x
+      int avanzar(); //w
+      void danio();
       // Declarando los nuevos métodos
       void gritoGuerra(string YOLO);
       void admirarPeach(string peach);
