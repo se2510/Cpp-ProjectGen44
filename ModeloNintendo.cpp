@@ -45,8 +45,19 @@ void ModeloNintendo::revelarSecretos(string combinacionTeclas) {
    cout << "Hola";
 }
 
+// Definiendo los nuevos métodos
+void ModeloNintendo::gritoGuerra(string YOLO){
+   cout << YOLO << " " << "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHHHHH" << "\n";
+}
+
+void ModeloNintendo::admirarPeach(string peach){
+   cout << peach << " " << peach << " "  << peach << "... YO TE AMOOOOOOOOO" << "\n";
+}
+
 int main() {
    ModeloNintendo captainToad = ModeloNintendo("Capitan Toad", "Manchadito lunares rojos", 26, 200, false);
    captainToad.saludar("mi estimade");
+   captainToad.admirarPeach("Peaches");
+   captainToad.gritoGuerra("POR EL REINO CHAMPINION");
    return 0;
 }

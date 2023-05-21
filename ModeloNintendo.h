@@ -19,6 +19,9 @@ class ModeloNintendo {
       void agacharse(char tecla = 'C');
       int avanzar(char tecla);
       void danio(string grito);
+      // Declarando los nuevos métodos
+      void gritoGuerra(string YOLO);
+      void admirarPeach(string peach);
       
 // Getters y setters para los miembros privados
    string getNombreClave() const {
