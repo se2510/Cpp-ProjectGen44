@@ -11,8 +11,8 @@ class ModeloNintendo {
       bool esHumano;
       char letraInicial;      
 
-      ModeloNintendo(string nombre, string color, int edad, int salud, bool esHumano = false);
-      ~ModeloNintendo();
+     ModeloNintendo();~ModeloNintendo();
+     ModeloNintendo(string nombre, string color, int edad, int salud, bool esHumano = false);
       
       void saludar(string nombre);
       void saltar(char tecla);
@@ -23,34 +23,35 @@ class ModeloNintendo {
       void gritoGuerra(string YOLO);
       void admirarPeach(string peach);
       
-// Getters y setters para los miembros privados
-   string getNombreClave() const {
+      // Getters y setters para los miembros privados
+      string getNombreClave() const {
       return nombreClave;
-   }
+      }
 
-   void setNombreClave(string nuevoNombreClave) {
+      void setNombreClave(string nuevoNombreClave) {
       nombreClave = nuevoNombreClave;
-   }
+      }
 
-   int getSalud() const {
+      int getSalud() const {
       return salud;
-   }
+      }
 
-   void setSalud(int nuevaSalud) {
+      void setSalud(int nuevaSalud) {
       salud = nuevaSalud;
-   }
+      }
 
-
-   protected:
+      protected:
       string nombreClave;
       int salud;
       char combinacionHabilidades[10];
       void habilidadesEspeciales(string combinacionTeclas);
    
-   private:
+      private:
       string nombreSecreto;
       char combinacionTrucos[10];
       char combinacionSecretos[10];
       void trucos(string combinacionTeclas);
       void revelarSecretos(string combinacionTeclas);
+
+      
 };
