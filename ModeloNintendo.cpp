@@ -55,12 +55,6 @@ void ModeloNintendo::admirarPeach(string peach){
 }
 
 int main() {
-   ModeloNintendo captainToad = ModeloNintendo("Capitan Toad", "Manchadito lunares rojos", 26, 200, false);
-   captainToad.saludar("mi estimade");
-   captainToad.admirarPeach("Peaches");
-   captainToad.gritoGuerra("POR EL REINO CHAMPINION");
-   return 0;
-
    int opcion;
    string nombre;
    string color;
@@ -98,7 +92,6 @@ int main() {
                }else{
                   esHumano = false;
                }
-
                // Ahora asignando en el objeto con el otro constructor
                modelo = new ModeloNintendo(nombre, color, edad, vida, esHumano);
                cout << "El modelo ha sido creado con éxito! :D" << endl;

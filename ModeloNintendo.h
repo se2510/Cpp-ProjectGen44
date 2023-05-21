@@ -11,8 +11,8 @@ class ModeloNintendo {
       bool esHumano;
       char letraInicial;      
 
-     ModeloNintendo();~ModeloNintendo();
-     ModeloNintendo(string nombre, string color, int edad, int salud, bool esHumano = false);
+      ModeloNintendo();~ModeloNintendo();
+      ModeloNintendo(string nombre, string color, int edad, int salud, bool esHumano = false);
       
       void saludar(string nombre);
       void saltar(char tecla);
